@@ -38,6 +38,9 @@ Here are some screenshots of the Weather Application in action:
 ### Weather Details
 ![Weather Details](image_02.png)
 
+### Weather Details
+![Weather Details](image_03.png)
+
 ## 🙏 Thank You 🙏
 
 Thank you for using the Weather Application! We hope it helps you stay informed about the weather conditions in your favorite cities.
