@@ -34,7 +34,25 @@ let getWeather = () =>{
                     <h4 class="title">max</h4>
                     <h4 class="temp">${data.main.temp_max}</h4>
                 </div>
-            </div>`;
+                </div>
+                <hr>
+                <div class="details">
+                    <div class="col">
+                        <img src="images/humidity.png">
+                        <div>
+                            <p class="humidity">${data.main.humidity}&#x25;</p>
+                            <p class="humidity">Humidity</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <img src="images/wind.png">
+                        <div>
+                            <p class="wind">${data.wind.speed}km/h</p>
+                            <p class="wind">Wind</p>
+                        </div>
+                    </div>
+                </div>
+            `;
         })
         .catch(()=>{
             result.innerHTML=`<h3 class="msg">City Not Found</h3>`;

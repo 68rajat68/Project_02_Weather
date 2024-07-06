@@ -100,16 +100,18 @@ body{
 }
 
 #result h2{
-    color : var(--white);
+    /* color : var(--white); */
+    color: black;
     text-transform: 0.18em;
     letter-spacing: 0.18em;
     font-weight: 600;
-    margin: 1.25em 0;
+    margin: 1em 0;
 }
 
 .weather,
 .desc{
-    color: var(--off-white);
+    /* color: var(--off-white); */
+    color: black;
     text-transform: uppercase;
     letter-spacing: 0.2em;
     font-size: 0.9em;
@@ -122,9 +124,9 @@ body{
     margin-top: -0.7em;
 }
 
-#result img{
+#result > img{
     margin: 0.6em 0 0 0;
-    width: 6.2em;
+    width: 4em;
     filter: drop-shadow(0 1.8em 3.7em var(--shadow));
 }
 
@@ -132,8 +134,9 @@ body{
     font-size: 4em;
     margin: 0.3em 0 0.7em 0;
     line-height: 0;
-    font-weight: 400;
-    color: var(--white);
+    font-weight: 600;
+    /* color: var(--white); */
+    color: black;
 }
 
 .temp-container{
@@ -151,12 +154,15 @@ body{
 
 .temp-container .title{
     font-weight: 600;
-    color: var(--white);
+    /* color: var(--white); */
+    color: black;
 }
 
 .temp-container .temp{
     font-weight: 300;
-    color:var(--off-white);
+    font-size: 20px;
+    /* color:var(--off-white); */
+    color: black;
 }
 
 .msg{
@@ -179,4 +185,31 @@ body{
     text-transform: uppercase;
     letter-spacing: 0.1em;
     /* font-weight: 500; */
+}
+
+.details{
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 10px;
+}
+
+.col{
+    display: flex;
+    align-items:center;
+    text-align: left;
+}
+.col img{
+    /* width: 20px; */
+    height: 40px;
+    width: inherit;
+    margin-right: 10px;
+}
+
+.wind, .humidity{
+    font-weight: 500;
+    font-size: 20px;
+    -webkit-text-fill-color:black;
+    /* color: var(--off-white); */
 }
